@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "KAF Website",
+      "runtimeExecutable": "C:/Users/paolo/AppData/Local/Programs/Python/Python312/python.exe",
+      "runtimeArgs": ["-m", "http.server", "3456"],
+      "port": 3456
+    }
+  ]
+}
