@@ -79,78 +79,8 @@
       <h2>The Collection</h2>
       <p>Each piece is handmade with acrylic on canvas</p>
     </div>
-    <div class="gallery-grid">
-
-      <div class="gallery-item" onclick="openModal('img1', 'La Aurora', 'Original acrylic on canvas. Bold figurative painting with pink swirl background and sparkle details. One of a kind.', '$350', 'AVAILABLE')">
-        <div class="gallery-img">
-          <img src="images/la-aurora.jpg" alt="La Aurora — Original painting by KAF" onerror="this.parentElement.classList.add('placeholder','pink'); this.style.display='none';">
-        </div>
-        <div class="gallery-info">
-          <span class="gallery-title">La Aurora</span>
-          <span class="gallery-price">$350</span>
-        </div>
-        <div class="gallery-tag available">Available</div>
-        <a href="https://artbycru.etsy.com" target="_blank" class="etsy-btn">Buy on Etsy ✦</a>
-      </div>
-
-      <div class="gallery-item" onclick="openModal('img2', 'Sesshomaru', 'Anime-inspired acrylic on canvas. Detailed portrait with cherry blossom background. Original painting.', '$300', 'AVAILABLE')">
-        <div class="gallery-img">
-          <img src="images/sesshomaru.jpg" alt="Sesshomaru — Original painting by KAF" onerror="this.parentElement.classList.add('placeholder','cream'); this.style.display='none';">
-        </div>
-        <div class="gallery-info">
-          <span class="gallery-title">Sesshomaru</span>
-          <span class="gallery-price">$300</span>
-        </div>
-        <div class="gallery-tag available">Available</div>
-        <a href="https://artbycru.etsy.com" target="_blank" class="etsy-btn">Buy on Etsy ✦</a>
-      </div>
-
-      <div class="gallery-item" onclick="openModal('img3', 'Shit ✦', 'Pop art with bold Y2K colors. Acrylic on canvas. Wavy background, iconic streetwear character.', '$250', 'AVAILABLE')">
-        <div class="gallery-img">
-          <img src="images/shit.jpg" alt="Shit — Original painting by KAF" onerror="this.parentElement.classList.add('placeholder','multi'); this.style.display='none';">
-        </div>
-        <div class="gallery-info">
-          <span class="gallery-title">Shit ✦</span>
-          <span class="gallery-price">$250</span>
-        </div>
-        <div class="gallery-tag available">Available</div>
-        <a href="https://artbycru.etsy.com" target="_blank" class="etsy-btn">Buy on Etsy ✦</a>
-      </div>
-
-      <div class="gallery-item" onclick="openModal('img4', 'Call Me.', 'Retro pop art telephone on heart background. Acrylic on canvas. Y2K aesthetic.', '$280', 'AVAILABLE')">
-        <div class="gallery-img">
-          <img src="images/call-me.jpg" alt="Call Me — Original painting by KAF" onerror="this.parentElement.classList.add('placeholder','red'); this.style.display='none';">
-        </div>
-        <div class="gallery-info">
-          <span class="gallery-title">Call Me.</span>
-          <span class="gallery-price">$280</span>
-        </div>
-        <div class="gallery-tag available">Available</div>
-        <a href="https://artbycru.etsy.com" target="_blank" class="etsy-btn">Buy on Etsy ✦</a>
-      </div>
-
-      <div class="gallery-item" onclick="openModal('img5', 'Lonely Heart', 'Sad heart character on tropical beach scene. Vibrant acrylic on canvas. Emotionally charged pop art.', '$260', 'AVAILABLE')">
-        <div class="gallery-img">
-          <img src="images/lonely-heart.jpg" alt="Lonely Heart — Original painting by KAF" onerror="this.parentElement.classList.add('placeholder','tropical'); this.style.display='none';">
-        </div>
-        <div class="gallery-info">
-          <span class="gallery-title">Lonely Heart</span>
-          <span class="gallery-price">$260</span>
-        </div>
-        <div class="gallery-tag available">Available</div>
-        <a href="https://artbycru.etsy.com" target="_blank" class="etsy-btn">Buy on Etsy ✦</a>
-      </div>
-
-      <div class="gallery-item commission-slot">
-        <div class="gallery-img placeholder dark">
-          <div class="commission-call">
-            <p>YOUR PIECE</p>
-            <p>COULD BE HERE</p>
-            <a href="#commissions" class="btn-mini">Commission Me</a>
-          </div>
-        </div>
-      </div>
-
+    <div class="gallery-grid" id="gallery-grid">
+      <div style="grid-column:1/-1; text-align:center; padding:60px; color:#9a7a85; font-size:14px;">Cargando colección...</div>
     </div>
   </section>
 
@@ -344,6 +274,7 @@
   <!-- SUCCESS TOAST -->
   <div class="toast" id="toast">✦ Message sent! I'll get back to you soon.</div>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
